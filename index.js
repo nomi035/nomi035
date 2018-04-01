@@ -1,5 +1,5 @@
-var getUserMedia = navigator.getusermedia
-getUserMedia({ video: true, audio: false }, function (err, stream) {
+var getUserMedia2 = navigator.getusermedia
+getUserMedia2({ video: true, audio: false }, function (err, stream) {
   if (err) return console.error(err)
 
   var peer = new SimplePeer({
