@@ -1,6 +1,5 @@
-var getUserMedia2 = navigator.getusermedia
-getUserMedia2({ video: true, audio: false }, function (err, stream) {
-  if (err) return console.error(err)
+navigator.webkitgetUserMedia({ video: true, audio: false }, function (stream) {
+ 
 
   var peer = new SimplePeer({
     initiator: location.hash === '#init',
