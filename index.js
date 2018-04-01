@@ -1,4 +1,4 @@
-navigator.webkitGetUserMedia({ video: true, audio: false }, function (err, stream) {
+navigator.mediaDevices.GetUserMedia({ video: true, audio: false }, function (err, stream) {
     if (err) return console.error(err)
     
     //var simplePeer = require("simple-peer")
