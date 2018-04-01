@@ -24,14 +24,3 @@ var peer = new SimplePeer({
   peer.on('data', function (data) {
     document.getElementById('messages').textContent += data + '\n'
   })
-
-  /*peer.on('stream', function (stream) {
-    var video = document.createElement('video')
-    document.body.appendChild(video)
-
-    video.src = window.URL.createObjectURL(stream)
-    video.play()
-  })
-//}, function(err) {
-//  console.error(err)
-//})
