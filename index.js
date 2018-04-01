@@ -1,4 +1,5 @@
-navigator.getUserMedia({ video: true, audio: false }, function (err, stream) {
+var getUserMedia = require(navigator.getusermedia)
+getUserMedia({ video: true, audio: false }, function (err, stream) {
   if (err) return console.error(err)
 
   var peer = new SimplePeer({
