@@ -1,7 +1,7 @@
-navigator.webkitGetUserMedia({ video: true, audio: false }, function (stream) {
+//navigator.webkitGetUserMedia({ video: true, audio: false }, function (stream) {
 
-  var Peer = require('simple-peer')
-  var peer = new Peer({
+var Peer = require('simple-peer')
+var peer = new Peer({
     initiator: location.hash === '#init',
     trickle: false,
     stream: stream
@@ -32,6 +32,6 @@ navigator.webkitGetUserMedia({ video: true, audio: false }, function (stream) {
     video.src = window.URL.createObjectURL(stream)
     video.play()
   })
-}, function(err) {
-  console.error(err)
-})
+//}, function(err) {
+//  console.error(err)
+//})
