@@ -33,4 +33,6 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: false }, function (err
     video.src = window.URL.createObjectURL(stream)
     video.play()
   })
+}, function(err) {
+  console.error(err)
 })
