@@ -1,4 +1,4 @@
-var getUserMedia = require('getusermedia')
+var getUserMedia = require('navigator.mediaDevices.getusermedia')
 
 getUserMedia({ video: true, audio: false }, function (err, stream) {
   if (err) return console.error(err)
