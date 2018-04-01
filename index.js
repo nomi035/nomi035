@@ -4,7 +4,6 @@
 var peer = new SimplePeer({
     initiator: location.hash === '#init',
     trickle: false,
-    stream: stream
   })
 
   peer.on('signal', function (data) {
